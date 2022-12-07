@@ -3,7 +3,7 @@ import MainPage from './MainPage';
 import Nav from './Nav';
 import ManufacturerList from "./ManufacturerList";
 import ManufacturerForm from "./ManufacturerForm";
-import VehicleModelForm from './VehicleModelFrom';
+import VehicleModelForm from './VehicleModelForm';
 import VehicleModelList from './VehicleModelList';
 import AutomobileForm from "./AutomobileForm";
 import AutomobileList from "./AutomobileList";
