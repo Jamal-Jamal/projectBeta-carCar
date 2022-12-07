@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
 import MainPage from './MainPage';
 import Nav from './Nav';
 // import "./App.css";
@@ -11,7 +11,8 @@ import AutomobileList from './AutomobileList';
 import AutomobileForm from './AutomobileForm';
 
 
-function App() {
+
+function App(props) {
   return (
     <BrowserRouter>
       <Nav />
