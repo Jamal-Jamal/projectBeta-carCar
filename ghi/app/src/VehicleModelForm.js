@@ -78,7 +78,7 @@ class VehicleModelForm extends React.Component {
             <div className="row">
             <div className="offset-3 col-6">
             <div className="shadow p-4 mt-4">
-                <h1>Create a new vehicle model</h1>
+                <h1>Create New Vehicle Model</h1>
                 <form onSubmit={this.handleSubmit} id="create-model-form">
                 <div className="form-floating mb-3">
                     <input onChange={this.handleNameChange} placeholder="Name" required
