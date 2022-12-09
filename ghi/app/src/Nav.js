@@ -12,43 +12,27 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown ">
-              <a
-                className="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sales
-              </a>
-          <ul className="dropdown-menu">
-            <li className="nav-item">
-                <NavLink className="dropdown-item" to="/salespeople">
-                Add Sales Person
-                </NavLink>
-            </li>
-            <li className="nav-item">
-                <NavLink className="dropdown-item" to="/customers">
-                Add customer
-                </NavLink>
-            </li>
-            <div className="dropdown-divider"></div>
-            <li className="nav-item">
-                <NavLink className="dropdown-item" to="/salesrecords/new">
-                Create a Sale Record
-                </NavLink>
-            </li>
-            <div className="dropdown-divider"></div>
-            <li className="nav-item">
-                <NavLink className="dropdown-item" to="/salesrecords">
-                Sales Record
-                </NavLink>
-            </li>
-            <li className="nav-item">
-                <NavLink className="dropdown-item" to="/salehistory">
-                Sales History
-                </NavLink>
-            </li>
-            </ul>
+          <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle"
+              role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+              <ul className="dropdown-menu">
+              <li className="nav-item"><NavLink
+                className="dropdown-item"  to="/technicians/new">Register a Technician</NavLink>
+                </li>
+              <li className="nav-item"><NavLink
+                className="dropdown-item"
+                to="/service-appointments/new/">Register an Appointment</NavLink>
+                </li>
+                <li className="nav-item"><NavLink
+                className="dropdown-item"
+                to="/service-appointments/">Service Appointments</NavLink>
+                </li>
+                <li className="nav-item"><NavLink
+                className="dropdown-item"
+                to="/service-appointments/history/">Service History</NavLink>
+                </li>
+              </ul>
             </li>
             <li className="nav-item dropdown ">
               <a className="nav-link dropdown-toggle" role="button"
