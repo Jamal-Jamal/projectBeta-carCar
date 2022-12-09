@@ -22,7 +22,6 @@ class AppointmentForm extends React.Component {
     }
     async componentDidMount() {
         const url = 'http://localhost:8080/api/technicians/';
-
         const response = await fetch(url);
 
         if (response.ok) {
@@ -34,7 +33,6 @@ class AppointmentForm extends React.Component {
         event.preventDefault();
         const data = {...this.state};
         delete data.technicians;
-
 
         const appointmentUrl = "http://localhost:8080/api/appointments/";
         const fetchConfig = {
