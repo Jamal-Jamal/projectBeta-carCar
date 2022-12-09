@@ -9,7 +9,6 @@ function VehicleModelList() {
         const url = 'http://localhost:8100/api/models'
         const response = await fetch(url)
         const vehicleModelDict = await response.json()
-        console.log(vehicleModelDict)
         setVehicleModels(vehicleModelDict.models)
     }
 

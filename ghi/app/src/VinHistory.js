@@ -34,7 +34,6 @@ class VinHistory extends React.Component{
                 <input onChange={this.handleChangeSearch}
                 type="text" className="form-control mb-5"
                 placeholder="Search VIN"/>
-                {/* <button className="btn btn-success" onClick={()=>this.handleChangeSearch(appointments.vin_num)} to="">Search</button> */}
                 <table className='table table-striped mt-5'>
                 <thead>
                     <tr>
@@ -74,7 +73,7 @@ class VinHistory extends React.Component{
                 })}
                 </tbody>
                 </table>
-                <p>*VIP customers are highlighted.</p>
+                <p>*VIP customers have highlighted VIN</p>
             </div>
             </div>
             </div>
