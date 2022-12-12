@@ -202,10 +202,6 @@ AutomobileVO:
 Vin
 is_sold
 
-## Application Diagram
-
-
-
 ## Sales Microservice
 
 First started by creating models, views, urls for the sales_rest back-end portion.  After creating these, I implemented the API's that would allow me to create a new sales person.  After finishing the backend, I moved over to the front-end React side to create a form for a sales person.  For the sales microservice I created models of AutomobileVO, Customer, SalesPerson, and SalesRecord.  We needed a way to implement an is_sold feature so we created a AutomobileVO to handle that.  I repeated these steps and created a form or list for Sales People, Sales Record, Customers and Sales History.  Our sales microservice poller polls the automobile data from the inventory API.  For every automobile that is in the inventory, a new AutomobileVO instance was created within the microservice for sales.  Between the two systems, the autombile VIN is shared.  When the AutomobileVO instance is first created, it defaults to have a status of False for is_sold.  When our Sales Record is created with a specific VIN, our AutomobileVO is then updated to reflect what is being sold in our database.  The automobiles that have not yet been sold are available to select from the Sales Record form.  The Customer and SalesPeople instance are added to the database when we submit the form "add a sales person" or "add customer."  This will create data for our sales Record and automobile. Finally I created a list view to display all the Sales Records.
