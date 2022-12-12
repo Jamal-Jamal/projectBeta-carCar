@@ -61,13 +61,13 @@ class AppointmentList extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.appointments.map((appointment,i) => {
+                {this.state.appointments.map((appointment) => {
                     let isComplete=""
                     if(appointment.is_finished === true){
                       isComplete="d-none"
                     }
                     let isVip=""
-                    if(appointment.is_vip===true){
+                    if(appointment.is_vip === true){
                       isVip="table-dark"
                     }
                   return(
