@@ -18,7 +18,15 @@ docker volume create beta-data
 docker-compose build
 docker-compose up
 
-Open up VScode in terminal with command "code ."
+## Application Diagram
+
+https://gitlab.com/Jamal-Jamal/project-beta/-/blob/main/ProjectBeta_carcar_ddd.png
+
+
+## Services
+
+This can either be a separate section with the services, their URLs, and ports listed here or you can include it in the application diagram
+GHI: localhost:3000 (React Front End)
 
 After these commands are ran, open up insomnia.
 
