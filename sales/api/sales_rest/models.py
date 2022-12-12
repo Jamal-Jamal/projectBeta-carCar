@@ -1,6 +1,5 @@
 from django.db import models
 
-# from inventory.api.inventory_rest.models import Automobile
 
 class AutomobileVO(models.Model):
     vin = models.CharField(max_length=17, unique=True)
